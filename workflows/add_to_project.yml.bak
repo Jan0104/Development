@@ -16,3 +16,4 @@ jobs:
           # to the issue
           project-url: https://github.com/Skylandia-Roleplay
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+    Dikke neger
