@@ -6,59 +6,50 @@ body:
   - type: markdown
     attributes:
       value: |
-        Bedankt dat je de tijd wilt nemen om een issue aan te maken!
-        Vul de onderstaande dingen aub zo gedetailleerd mogelijk in zodat we de issue snel kunnen afhandelen.
+        Fijn dat je een bug wilt aanmaken, vul zo goed en gedetailleerd deze bug formulier in, zo kunnen we de bug/issue sneller onderzoeken en eruit halen
   - type: input
     id: contact
     attributes:
-      label: Contact Details
-      description: Hoe kunnen we je contacteren op Discord als we extra informatie nodig zijn?
-      placeholder: ex. Jeremy.#7020
+      label: Contact
+      description: Hoe kunnen we je contacteren op Discord als we extra informatie nodig hebben omtrent de bug?
+      placeholder: Voorbeeld: Jeremy.#7020
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
       label: Wat gebeurde er?
-      description: Wat gebeurde er precies, dus welke meldingen zag je, wat zag je in je console, etc?
+      description: Welke meldingen zag je in je console, of wat gebeurde er precies waardoor de bug ontstond?
       placeholder: |
-        Voorbeeld: Ik zag een notificatie met de volgende tekst: "Er ging iets mis probeer het opnieuw"
-        Hiernaast kwam er ook een error in m'n console
+        Voorbeeld: Er kwam een melding in me beeld dat er een error kwam van een bepaald script. Hierdoor werkte de actie die ik wilde uitvoeren niet en kon ik niet verder met de roleplay.
+        Toen ik mijn F8 opende kwam er een error in mijn console.
     validations:
       required: true
   - type: textarea
-    id: what-should-happen
-    attributes:
-      label: Wat hoorde er te gebeuren?
-      description: Wat hoorde er te gebeuren, dus wat zou er normaal moeten gebeuren in plaats van het bovenstaande
-      placeholder: Vertel ons wat je verwachte
-  - type: textarea
     id: repro
     attributes:
-      label: "Wat veroorzaakt de bug?"
-      description: "Welke exacte stappen kunnen wij volgen om deze bug zelf na te kunnen maken?"
+      label: Wat veroorzaakt de bug?
+      description: Welke acties moeten wij uitvoeren om deze bug "na te bootsen"?
       placeholder: |
-        Voorbeeld: "Doe eerst een zak op je hoofd, doe hierna een dansje en dan opeens teleport je naar narcopolis"
+        Voorbeeld: Probeer iemand dood te schieten en omhoog te helpen, deze persoon kan dan niet omhoog geholpen worden.
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: frequency
     attributes:
-      description: "Hoevaak komt deze bug voor?"
-      label: "Frequentie van de bug"
+      description: Hoevaak komt deze bug voor?
+      label: Frequentie van de bug
       options:
         - Altijd
         - Meerdere keren per dag
-        - 1x per dag
-        - 1x per week
-        - Sporadisch/Heel soms
+        - Af en toe
     validations:
       required: true
   - type: dropdown
     id: impact
     attributes:
-      description: "Hoog wanneer 50% of meer er last van heeft"
-      label: "Wat is de impact van deze bug?"
+      description: Heeft jij of iemand anders veel last van deze bug?
+      label: Wat is de impact van deze bug?
       options:
         - hoog
         - laag
@@ -68,14 +59,5 @@ body:
     attributes:
       label: Relevante log bestanden
       description: |
-        Kopieër hier aub relevante logs in, dus als er errors in je console waren aub deze hierin kopiëren.
-        Gelieve het volledige logbestand hierin te plaatsen (dus even op "Open Log" klikken in console en dit bestand uploaden)
+        Je kan hier je bestanden inplaatsen die te maken heeft met deze bug. Hieronder verstaan wij log bestanden, en of screenshots van de error. Indien je deze opstuurt, kunnen wij gerichter kijken naar de fout in de server.
       placeholder: Sleep hier je logbestanden heen
-  - type: checkboxes
-    id: richtlijnen
-    attributes:
-      label: Richtlijnen
-      description: Door deze issue aan te maken ga je akkoord met onze richtlijnen
-      options:
-        - label: Ik ga akkoord met de issue richtlijnen en heb deze aandachtig gelezen
-          required: true
