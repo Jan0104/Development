@@ -12,7 +12,7 @@ body:
     attributes:
       label: Contact
       description: Hoe kunnen we je contacteren op Discord als we extra informatie nodig hebben omtrent de bug?
-      placeholder: Voorbeeld: Jeremy.#7020
+      placeholder: "Voorbeeld: Jeremy.#7020"
     validations:
       required: true
   - type: textarea
